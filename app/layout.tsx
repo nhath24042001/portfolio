@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { GradientBackground } from "@/components/effects/GradientBackground";
 import { Cursor } from "@/components/effects/Cursor";
 import { FloatingElements } from "@/components/effects/FloatingElements";
+import { ScrollToTop } from "@/components/ui/scroll-to-top";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -78,6 +79,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <ScrollToTop />
         </ThemeProvider>
       </body>
     </html>
