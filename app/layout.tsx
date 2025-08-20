@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { GradientBackground } from "@/components/effects/GradientBackground";
 import { Cursor } from "@/components/effects/Cursor";
+import { FloatingElements } from "@/components/effects/FloatingElements";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -70,6 +71,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <GradientBackground />
+          <FloatingElements />
           <Cursor />
           <Header />
           <main className="pt-16 min-h-screen">

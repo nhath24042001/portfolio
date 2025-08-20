@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
 import { Container } from "@/components/layout/Container"
+import { TypewriterText } from "@/components/effects/TypewriterText"
 
 export default function Home() {
   return (
@@ -9,44 +10,53 @@ export default function Home() {
       {/* Hero Section */}
       <section className="text-center space-y-8 max-w-4xl mx-auto">
         <div className="space-y-4">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight animate-fade-in-up">
             Hi, I&apos;m{" "}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Nhật Huy
+              <TypewriterText 
+                text="Nhật Huy" 
+                speed={150} 
+                delay={500}
+                className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+              />
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            Full Stack Developer passionate about creating beautiful, performant, and accessible web applications.
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            <TypewriterText 
+              text="Full Stack Developer passionate about creating beautiful, performant, and accessible web applications." 
+              speed={50} 
+              delay={2000}
+            />
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button asChild size="lg" className="group">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
+          <Button asChild size="lg" className="group animate-bounce-slow">
             <Link href="/projects">
               View My Work
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
           </Button>
-          <Button variant="outline" asChild size="lg">
+          <Button variant="outline" asChild size="lg" className="animate-pulse-slow">
             <Link href="/contact">Get In Touch</Link>
           </Button>
         </div>
 
         {/* Social Links */}
-        <div className="flex justify-center gap-4 pt-8">
-          <Button variant="ghost" size="icon" asChild>
+        <div className="flex justify-center gap-4 pt-8 animate-fade-in-up" style={{ animationDelay: "0.9s" }}>
+          <Button variant="ghost" size="icon" asChild className="hover:scale-110 transition-transform">
             <Link href="https://github.com/nhathuy" target="_blank" rel="noopener noreferrer">
               <Github className="h-5 w-5" />
               <span className="sr-only">GitHub</span>
             </Link>
           </Button>
-          <Button variant="ghost" size="icon" asChild>
+          <Button variant="ghost" size="icon" asChild className="hover:scale-110 transition-transform">
             <Link href="https://linkedin.com/in/nhathuy" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
             </Link>
           </Button>
-          <Button variant="ghost" size="icon" asChild>
+          <Button variant="ghost" size="icon" asChild className="hover:scale-110 transition-transform">
             <Link href="mailto:contact@nhathuy.dev">
               <Mail className="h-5 w-5" />
               <span className="sr-only">Email</span>
@@ -57,7 +67,7 @@ export default function Home() {
 
       {/* Skills Section */}
       <section className="mt-24 space-y-8">
-        <div className="text-center space-y-4">
+        <div className="text-center space-y-4 animate-slide-in-left">
           <h2 className="text-3xl font-bold">Technologies I Work With</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             I specialize in modern web technologies and love building scalable, maintainable applications.
@@ -74,10 +84,11 @@ export default function Home() {
             { name: "PostgreSQL", category: "Database" },
             { name: "AWS", category: "Cloud" },
             { name: "Docker", category: "DevOps" },
-          ].map((tech) => (
+          ].map((tech, index) => (
             <div
               key={tech.name}
-              className="p-4 rounded-lg border bg-card hover:bg-accent/50 transition-colors text-center"
+              className="p-4 rounded-lg border bg-card hover:bg-accent/50 transition-all duration-300 hover:scale-105 hover:shadow-lg animate-fade-in-up"
+              style={{ animationDelay: `${0.3 + index * 0.1}s` }}
             >
               <h3 className="font-semibold">{tech.name}</h3>
               <p className="text-sm text-muted-foreground">{tech.category}</p>
