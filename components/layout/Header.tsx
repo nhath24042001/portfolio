@@ -18,6 +18,7 @@ export function Header() {
   const navigationItems = [
     { name: "Home", href: "/" },
     { name: "Experience", href: "/experience" },
+    { name: "Skills", href: "/skills" },
   ];
 
   return (
