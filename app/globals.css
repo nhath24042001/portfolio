@@ -323,6 +323,47 @@ html {
   border-color: oklch(var(--color-primary)) !important;
 }
 
+/* Contact page animations */
+.contact-form-enter {
+  animation: contactFormEnter 0.8s ease-out;
+}
+
+@keyframes contactFormEnter {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.contact-info-enter {
+  animation: contactInfoEnter 0.8s ease-out;
+}
+
+@keyframes contactInfoEnter {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.contact-card-hover {
+  transition: all 0.3s ease;
+}
+
+.contact-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: oklch(var(--color-primary));
+}
+
 /* Responsive timeline */
 @media (max-width: 768px) {
   .vertical-timeline-element--work .vertical-timeline-element-content {
