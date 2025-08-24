@@ -21,8 +21,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Nhật Huy - Full Stack Developer",
-  description: "Full Stack Developer specializing in React, Next.js, TypeScript, and modern web technologies. Building beautiful, performant, and accessible web applications.",
-  keywords: ["Full Stack Developer", "React", "Next.js", "TypeScript", "Web Development", "Frontend", "Backend"],
+  description: "Full Stack Developer specializing in React, Next.js, Angular, Vue.js, Node.js, NestJS, TypeORM, PostgreSQL, and modern web technologies. Building scalable, performant, and accessible web applications.",
+  keywords: ["Full Stack Developer", "React", "Next.js", "Angular", "Vue.js", "Node.js", "NestJS", "TypeORM", "PostgreSQL", "GraphQL", "TypeScript", "Web Development", "Frontend", "Backend"],
   authors: [{ name: "Nhật Huy" }],
   creator: "Nhật Huy",
   openGraph: {
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://nhathuy.dev",
     title: "Nhật Huy - Full Stack Developer",
-    description: "Full Stack Developer specializing in React, Next.js, TypeScript, and modern web technologies.",
+    description: "Full Stack Developer specializing in React, Next.js, Angular, Vue.js, Node.js, NestJS, TypeORM, PostgreSQL, and modern web technologies.",
     siteName: "nhathuy.dev",
   },
   twitter: {
     card: "summary_large_image",
     title: "Nhật Huy - Full Stack Developer",
-    description: "Full Stack Developer specializing in React, Next.js, TypeScript, and modern web technologies.",
+    description: "Full Stack Developer specializing in React, Next.js, Angular, Vue.js, Node.js, NestJS, TypeORM, PostgreSQL, and modern web technologies.",
     creator: "@nhathuy",
   },
   robots: {

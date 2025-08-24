@@ -6,14 +6,14 @@ import { Container } from "@/components/layout/Container";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { SkillsParticles } from "@/components/effects/SkillsParticles";
-import { 
-  Code, 
-  Database, 
-  Cloud, 
-  Zap, 
-  Shield, 
-  Layers, 
-  Globe, 
+import {
+  Code,
+  Database,
+  Cloud,
+  Zap,
+  Shield,
+  Layers,
+  Globe,
   Smartphone,
   Cpu,
   Palette,
@@ -26,7 +26,7 @@ import {
   TrendingUp,
   Star,
   CheckCircle,
-  ExternalLink
+  ExternalLink,
 } from "lucide-react";
 
 interface Skill {
@@ -65,9 +65,10 @@ const skillCategories: SkillCategory[] = [
         level: 95,
         icon: <Code className="h-5 w-5" />,
         color: "#61DAFB",
-        description: "Advanced React patterns, hooks, and performance optimization",
+        description:
+          "Advanced React patterns, hooks, and performance optimization",
         experience: "3+ years",
-        projects: 25
+        projects: 25,
       },
       {
         id: "nextjs",
@@ -78,7 +79,29 @@ const skillCategories: SkillCategory[] = [
         color: "#000000",
         description: "Full-stack React framework with SSR and SSG",
         experience: "2+ years",
-        projects: 15
+        projects: 15,
+      },
+      {
+        id: "angular",
+        name: "Angular",
+        category: "Frontend",
+        level: 75,
+        icon: <Code className="h-5 w-5" />,
+        color: "#DD0031",
+        description: "Enterprise-grade frontend framework with TypeScript",
+        experience: "1+ year",
+        projects: 8,
+      },
+      {
+        id: "vue",
+        name: "Vue.js",
+        category: "Frontend",
+        level: 70,
+        icon: <Code className="h-5 w-5" />,
+        color: "#4FC08D",
+        description: "Progressive JavaScript framework for building UIs",
+        experience: "1+ year",
+        projects: 6,
       },
       {
         id: "typescript",
@@ -89,7 +112,7 @@ const skillCategories: SkillCategory[] = [
         color: "#3178C6",
         description: "Type-safe JavaScript development",
         experience: "2+ years",
-        projects: 20
+        projects: 20,
       },
       {
         id: "tailwind",
@@ -100,9 +123,9 @@ const skillCategories: SkillCategory[] = [
         color: "#06B6D4",
         description: "Utility-first CSS framework",
         experience: "2+ years",
-        projects: 18
-      }
-    ]
+        projects: 18,
+      },
+    ],
   },
   {
     id: "backend",
@@ -120,7 +143,19 @@ const skillCategories: SkillCategory[] = [
         color: "#339933",
         description: "JavaScript runtime for server-side development",
         experience: "3+ years",
-        projects: 20
+        projects: 20,
+      },
+      {
+        id: "nestjs",
+        name: "NestJS",
+        category: "Backend",
+        level: 85,
+        icon: <Server className="h-5 w-5" />,
+        color: "#E0234E",
+        description:
+          "Progressive Node.js framework with TypeScript, dependency injection, and enterprise patterns",
+        experience: "2+ years",
+        projects: 15,
       },
       {
         id: "express",
@@ -131,7 +166,7 @@ const skillCategories: SkillCategory[] = [
         color: "#000000",
         description: "Fast, unopinionated web framework",
         experience: "2+ years",
-        projects: 15
+        projects: 15,
       },
       {
         id: "graphql",
@@ -142,9 +177,31 @@ const skillCategories: SkillCategory[] = [
         color: "#E10098",
         description: "Query language for APIs",
         experience: "1+ year",
-        projects: 8
-      }
-    ]
+        projects: 8,
+      },
+      {
+        id: "typeorm",
+        name: "TypeORM",
+        category: "Backend",
+        level: 80,
+        icon: <Database className="h-5 w-5" />,
+        color: "#FCA326",
+        description: "TypeScript ORM for database management",
+        experience: "2+ years",
+        projects: 12,
+      },
+      {
+        id: "jwt",
+        name: "JWT",
+        category: "Backend",
+        level: 85,
+        icon: <Shield className="h-5 w-5" />,
+        color: "#000000",
+        description: "JSON Web Tokens for authentication",
+        experience: "2+ years",
+        projects: 15,
+      },
+    ],
   },
   {
     id: "database",
@@ -162,7 +219,7 @@ const skillCategories: SkillCategory[] = [
         color: "#336791",
         description: "Advanced open-source relational database",
         experience: "2+ years",
-        projects: 12
+        projects: 12,
       },
       {
         id: "mongodb",
@@ -173,20 +230,9 @@ const skillCategories: SkillCategory[] = [
         color: "#47A248",
         description: "NoSQL document database",
         experience: "1+ year",
-        projects: 8
+        projects: 8,
       },
-      {
-        id: "redis",
-        name: "Redis",
-        category: "Database",
-        level: 70,
-        icon: <Zap className="h-5 w-5" />,
-        color: "#DC382D",
-        description: "In-memory data structure store",
-        experience: "1+ year",
-        projects: 6
-      }
-    ]
+    ],
   },
   {
     id: "devops",
@@ -196,17 +242,6 @@ const skillCategories: SkillCategory[] = [
     description: "Deployment, infrastructure, and cloud services",
     skills: [
       {
-        id: "aws",
-        name: "AWS",
-        category: "Cloud",
-        level: 78,
-        icon: <Cloud className="h-5 w-5" />,
-        color: "#FF9900",
-        description: "Amazon Web Services cloud platform",
-        experience: "2+ years",
-        projects: 10
-      },
-      {
         id: "docker",
         name: "Docker",
         category: "DevOps",
@@ -215,7 +250,7 @@ const skillCategories: SkillCategory[] = [
         color: "#2496ED",
         description: "Containerization platform",
         experience: "2+ years",
-        projects: 12
+        projects: 12,
       },
       {
         id: "git",
@@ -226,10 +261,10 @@ const skillCategories: SkillCategory[] = [
         color: "#F05032",
         description: "Version control system",
         experience: "3+ years",
-        projects: 30
-      }
-    ]
-  }
+        projects: 30,
+      },
+    ],
+  },
 ];
 
 const certifications = [
@@ -238,22 +273,22 @@ const certifications = [
     issuer: "Amazon Web Services",
     date: "2023",
     icon: <Award className="h-5 w-5" />,
-    color: "#FF9900"
+    color: "#FF9900",
   },
   {
     name: "MongoDB Developer",
     issuer: "MongoDB University",
     date: "2022",
     icon: <BookOpen className="h-5 w-5" />,
-    color: "#47A248"
+    color: "#47A248",
   },
   {
     name: "React Advanced Patterns",
     issuer: "Frontend Masters",
     date: "2023",
     icon: <Star className="h-5 w-5" />,
-    color: "#61DAFB"
-  }
+    color: "#61DAFB",
+  },
 ];
 
 export function Skills() {
@@ -266,25 +301,25 @@ export function Skills() {
       opacity: 1,
       transition: {
         staggerChildren: 0.1,
-        delayChildren: 0.2
-      }
-    }
+        delayChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
 
   const cardVariants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1 },
-    hover: { scale: 1.05, y: -5 }
+    hover: { scale: 1.05, y: -5 },
   };
 
   const progressVariants = {
     hidden: { width: 0 },
-    visible: (level: number) => ({ width: `${level}%` })
+    visible: (level: number) => ({ width: `${level}%` }),
   };
 
   return (
@@ -308,7 +343,7 @@ export function Skills() {
               <Target className="h-4 w-4" />
               Skills & Expertise
             </motion.div>
-            
+
             <motion.h1
               className="text-4xl md:text-6xl font-bold"
               initial={{ opacity: 0, y: 20 }}
@@ -320,21 +355,25 @@ export function Skills() {
                 Skills
               </span>
             </motion.h1>
-            
+
             <motion.p
               className="text-xl text-muted-foreground max-w-3xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              A comprehensive overview of my technical expertise, from frontend frameworks 
-              to backend systems and cloud infrastructure. Continuously learning and 
-              expanding my skill set to deliver cutting-edge solutions.
+              A comprehensive overview of my technical expertise, from frontend
+              frameworks to backend systems and cloud infrastructure.
+              Continuously learning and expanding my skill set to deliver
+              cutting-edge solutions.
             </motion.p>
           </motion.div>
 
           {/* Category Navigation */}
-          <motion.div className="flex flex-wrap justify-center gap-4" variants={itemVariants}>
+          <motion.div
+            className="flex flex-wrap justify-center gap-4"
+            variants={itemVariants}
+          >
             {skillCategories.map((category) => (
               <motion.button
                 key={category.id}
@@ -347,7 +386,10 @@ export function Skills() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 style={{
-                  border: selectedCategory === category.id ? `2px solid ${category.color}` : "2px solid transparent"
+                  border:
+                    selectedCategory === category.id
+                      ? `2px solid ${category.color}`
+                      : "2px solid transparent",
                 }}
               >
                 {category.icon}
@@ -367,7 +409,7 @@ export function Skills() {
               transition={{ duration: 0.3 }}
             >
               {skillCategories
-                .find(cat => cat.id === selectedCategory)
+                .find((cat) => cat.id === selectedCategory)
                 ?.skills.map((skill, index) => (
                   <motion.div
                     key={skill.id}
@@ -388,13 +430,13 @@ export function Skills() {
                         whileHover={{ rotate: 360 }}
                         transition={{ duration: 0.6 }}
                       >
-                        <div style={{ color: skill.color }}>
-                          {skill.icon}
-                        </div>
+                        <div style={{ color: skill.color }}>{skill.icon}</div>
                       </motion.div>
                       <div>
                         <h3 className="font-semibold text-lg">{skill.name}</h3>
-                        <p className="text-sm text-muted-foreground">{skill.experience}</p>
+                        <p className="text-sm text-muted-foreground">
+                          {skill.experience}
+                        </p>
                       </div>
                     </div>
 
@@ -402,7 +444,9 @@ export function Skills() {
                     <div className="space-y-2 mb-4">
                       <div className="flex justify-between items-center">
                         <span className="text-sm font-medium">Proficiency</span>
-                        <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                        <span className="text-sm text-muted-foreground">
+                          {skill.level}%
+                        </span>
                       </div>
                       <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
                         <motion.div
@@ -442,10 +486,12 @@ export function Skills() {
           {/* Certifications Section */}
           <motion.div className="space-y-8" variants={itemVariants}>
             <div className="text-center space-y-4">
-              <h2 className="text-3xl font-bold">Certifications & Achievements</h2>
+              <h2 className="text-3xl font-bold">
+                Certifications & Achievements
+              </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Professional certifications and achievements that validate my expertise 
-                and commitment to continuous learning.
+                Professional certifications and achievements that validate my
+                expertise and commitment to continuous learning.
               </p>
             </div>
 
@@ -466,13 +512,13 @@ export function Skills() {
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div style={{ color: cert.color }}>
-                      {cert.icon}
-                    </div>
+                    <div style={{ color: cert.color }}>{cert.icon}</div>
                   </motion.div>
-                  
+
                   <h3 className="font-semibold mb-2">{cert.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-2">{cert.issuer}</p>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    {cert.issuer}
+                  </p>
                   <Badge variant="secondary" className="text-xs">
                     {cert.date}
                   </Badge>
@@ -487,10 +533,26 @@ export function Skills() {
             variants={itemVariants}
           >
             {[
-              { label: "Skills Mastered", value: "15+", icon: <Target className="h-6 w-6" /> },
-              { label: "Projects Completed", value: "50+", icon: <Code className="h-6 w-6" /> },
-              { label: "Years Experience", value: "3+", icon: <TrendingUp className="h-6 w-6" /> },
-              { label: "Certifications", value: "5+", icon: <Award className="h-6 w-6" /> }
+              {
+                label: "Skills Mastered",
+                value: "15+",
+                icon: <Target className="h-6 w-6" />,
+              },
+              {
+                label: "Projects Completed",
+                value: "50+",
+                icon: <Code className="h-6 w-6" />,
+              },
+              {
+                label: "Years Experience",
+                value: "3+",
+                icon: <TrendingUp className="h-6 w-6" />,
+              },
+              {
+                label: "Certifications",
+                value: "5+",
+                icon: <Award className="h-6 w-6" />,
+              },
             ].map((stat, index) => (
               <motion.div
                 key={stat.label}
@@ -506,8 +568,12 @@ export function Skills() {
                 >
                   {stat.icon}
                 </motion.div>
-                <div className="text-2xl font-bold text-primary">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+                <div className="text-2xl font-bold text-primary">
+                  {stat.value}
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  {stat.label}
+                </div>
               </motion.div>
             ))}
           </motion.div>
@@ -517,10 +583,11 @@ export function Skills() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold">Ready to Work Together?</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Let&apos;s discuss how my skills and expertise can help bring your project to life.
+                Let&apos;s discuss how my skills and expertise can help bring
+                your project to life.
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="group">
                 Start a Project

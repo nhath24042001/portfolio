@@ -16,14 +16,13 @@ export function Header() {
   const { theme, setTheme } = useTheme();
 
   const navigationItems = [
-    { name: "Home", href: "/" },
-    { name: "Experience", href: "/experience" },
-    { name: "Skills", href: "/skills" },
-    { name: "Projects", href: "/projects" },
-    { name: "Blog", href: "/blog" },
-    { name: "Game", href: "/game" },
-    { name: "Contact", href: "/contact" },
-  ];
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Experience", href: "/experience" },
+  { name: "Skills", href: "/skills" },
+  { name: "Projects", href: "/projects" },
+  { name: "Contact", href: "/contact" },
+];
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-background/70 border-b border-border">

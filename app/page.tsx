@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Github, Linkedin, Mail, Code, Database, Cloud, Layers, Zap, Globe, Shield, Settings } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Mail, Code, Database, Cloud, Layers, Zap, Globe, Shield, Settings, Server } from "lucide-react"
 import Link from "next/link"
 import { Container } from "@/components/layout/Container"
 import { TypewriterText } from "@/components/effects/TypewriterText"
@@ -10,11 +10,15 @@ import { FeaturedProjects } from "@/components/sections/FeaturedProjects"
 const technologies = [
   { name: "React", category: "Frontend", icon: <Code />, color: "#61DAFB" },
   { name: "Next.js", category: "Framework", icon: <Layers />, color: "#000000" },
+  { name: "Angular", category: "Frontend", icon: <Code />, color: "#DD0031" },
+  { name: "Vue.js", category: "Frontend", icon: <Code />, color: "#4FC08D" },
   { name: "TypeScript", category: "Language", icon: <Code />, color: "#3178C6" },
   { name: "Node.js", category: "Backend", icon: <Settings />, color: "#339933" },
-  { name: "Tailwind CSS", category: "Styling", icon: <Zap />, color: "#06B6D4" },
+  { name: "NestJS", category: "Backend", icon: <Server />, color: "#E0234E" },
+  { name: "GraphQL", category: "API", icon: <Zap />, color: "#E10098" },
   { name: "PostgreSQL", category: "Database", icon: <Database />, color: "#336791" },
-  { name: "AWS", category: "Cloud", icon: <Cloud />, color: "#FF9900" },
+  { name: "TypeORM", category: "ORM", icon: <Database />, color: "#FCA326" },
+  { name: "Tailwind CSS", category: "Styling", icon: <Zap />, color: "#06B6D4" },
   { name: "Docker", category: "DevOps", icon: <Shield />, color: "#2496ED" },
 ];
 
