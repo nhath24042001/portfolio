@@ -50,24 +50,6 @@ export function Header() {
             </NavigationMenuList>
           </NavigationMenu>
         </nav>
-
-        <div className="flex items-center gap-2">
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="h-9 w-9"
-          >
-            <Sun className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-            <Moon className="absolute h-4 w-4 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-            <span className="sr-only">Toggle theme</span>
-          </Button>
-
-          <Button variant="ghost" size="icon" className="md:hidden h-9 w-9">
-            <Menu className="h-4 w-4" />
-            <span className="sr-only">Toggle menu</span>
-          </Button>
-        </div>
       </div>
     </header>
   );
